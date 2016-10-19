@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N mpi-matrix-matrix-multi
+#PBS -l nodes=16:ppn=1,mem=1993m,walltime=02:00:00
+#PBS -W x=nmatchpolicy:exactnode
+#PBS -M h116n526@ku.edu
+#PBS -m abe
+#PBS -e std.err
+#PBS -o std.out
+
+# Save job specific information for troubleshooting
+echo "Job ID is $SLURM_JOBID"
+echo "Running on host $(hostname)"
+echo "Working directory is $SLURM_SUBMIT_DIR"
+echo "The following processors are allocated to this job:"
+echo $SLURM_NODELIST
+ulimit -s unlimited
+
+# Run the program
+echo "Start: $(date +%F_%T)"
+module load mpich
+mpirun -np 4 $SLURM_SUBMIT_DIR/mpi_matrix_matrix_multi 1000 1000 1000 1000
+#>$LOCAL_DIR/$SLURM_JOB_NAME-$SLURM_JOBID.log

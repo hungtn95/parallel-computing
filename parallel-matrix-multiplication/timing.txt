@@ -1,0 +1,7 @@
+Job ID is 11244
+Running on host l024.local
+Working directory is /panfs/pfs.acf.ku.edu/home/h116n526/EECS_739/HW3
+The following processors are allocated to this job:
+l[024,037-051]
+Start: 2016-04-07_13:36:54
+Elapsed time with 4 processors is 3.740000 seconds

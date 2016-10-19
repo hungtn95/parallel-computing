@@ -1,0 +1,28 @@
+Job ID is 11247
+Running on host l036.local
+Working directory is /panfs/pfs.acf.ku.edu/home/h116n526/EECS_739/HW3
+The following processors are allocated to this job:
+l[036-051]
+Start: 2016-04-07_13:39:05
+Matrix A :
+  5   8   8   5   8 
+  7   5   1   7   7 
+  3   3   8   3   4 
+  1   0   8   1   8 
+  8   4   5   1   2 
+
+Matrix B :
+  8   2   3   8   6 
+  7   3   7   8   0 
+  5   5   5   9   2 
+  3   2   5   3   7 
+  1   6   8   0   7 
+
+
+Matrix C :
+159 132 200 191 137 
+124  90 152 126 142 
+ 98  85 117 129  83 
+ 59  92 112  83  85 
+122  67  98 144  79 
+Elapsed time with 4 processors is 0.000000 seconds
