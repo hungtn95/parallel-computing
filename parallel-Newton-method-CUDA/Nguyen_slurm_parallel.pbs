@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -q gpu
+#PBS -l nodes=1:ppn=1:k80,gpus=1,mem=2g,walltime=02:00:00
+#PBS -N NewtonGPU
+#PBS -e std.err
+#PBS -o std.out
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 1
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 2
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 4
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 8
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 16
+/home/h116n526/EECS_739/NewtonGPU/NewtonGPU 100 0.001 5 32
+
