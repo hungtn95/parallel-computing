@@ -1,0 +1,2 @@
+The LDL* solver takes 0.259596 seconds to solve for a 500x500 matrix.
+The LDL* solver takes 2.01196 seconds to solve for a 1000x1000 matrix.

@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N LDLLinearSolver
+#PBS -l nodes=1:ppn=1,mem=1993m,walltime=02:00:00
+#PBS -M h116n526@ku.edu
+#PBS -e std.err
+#PBS -o std.out
+
+WORK_DIR=~/project/htnguyen/HW2
+
+echo "Start: $(date +%F_%T)"
+
+echo $SLURM_SUBMIT_DIR
+
+$WORK_DIR/LinearSolver $WORK_DIR/Result.txt
+
+echo "Stop: $(date +%F_%T)"
